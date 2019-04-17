@@ -17,6 +17,7 @@ class ModeleTetris :
                 else:
                     liste.append(-1)
             self.__terrain.append(liste)
+        print(self.__terrain)
         self.__forme = Forme(self)
 
         self.__score=0
@@ -77,6 +78,17 @@ class ModeleTetris :
 
     def forme_tourne(self):
         self.__forme.tourne()
+
+    def est_ligne_complete(self, lig):
+        occ=0
+        tot=0
+        for i in range(len(self.__terrain[self.__larg])):
+            if self.est_occupe(lig, i):
+                occ+=1
+            tot+=1
+        if tot==occ:
+            return True
+        return False
     
         
 
