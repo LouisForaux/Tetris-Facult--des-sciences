@@ -100,7 +100,8 @@ class ModeleTetris :
                 self.supprime_ligne(i)
                 self.__score+=1
 
-        
+    def get_score(self):
+        return self.__score
 
 class Forme:
 

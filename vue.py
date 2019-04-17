@@ -13,6 +13,11 @@ class VueTetris:
         self.__can_terrain = Canvas(self.__fenetre, width =self.__modele.get_largeur()*DIM, height =self.__modele.get_hauteur()*DIM)
         self.__can_terrain.pack(side ='left')
         frame = Frame(self.__fenetre)
+
+        self.__bundleScore = StringVar()
+        self.__bundleScore="Score : "+str(self.__modele.get_score())
+        self.__lbl_score= Label(frame, textvariable=self.__bundleScore)
+        self.__lbl_score.pack()
         btn_quitter = Button(frame, text="quitter" , command = self.__fenetre.destroy)
         btn_quitter.pack()
         frame.pack(side ='right')
