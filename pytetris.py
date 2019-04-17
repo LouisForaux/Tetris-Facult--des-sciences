@@ -47,7 +47,7 @@ class Controleur:
 
 
 if __name__ == "__main__" :
-# cr ́eation du mod`ele
+# cŕeation du modèle
     tetris = modele.ModeleTetris()
-# cr ́eation du contrˆoleur. c’est lui qui cr ́e ́e la vue # et lance la boucle d’ ́ecoute des  ́evts
+# cŕeation du contrôleur. c’est lui qui cŕée la vue # et lance la boucle d’́ecoute des  ́evènements
     ctrl = Controleur(tetris)

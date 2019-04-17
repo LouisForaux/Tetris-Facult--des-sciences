@@ -19,6 +19,8 @@ class ModeleTetris :
             self.__terrain.append(liste)
         self.__forme = Forme(self)
 
+        self.__score=0
+
     def get_largeur(self):
         '''ModeleTetris->int'''
         return self.__larg
