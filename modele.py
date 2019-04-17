@@ -17,7 +17,6 @@ class ModeleTetris :
                 else:
                     liste.append(-1)
             self.__terrain.append(liste)
-        print(self.__terrain)
         self.__forme = Forme(self)
 
         self.__score=0
