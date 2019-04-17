@@ -88,7 +88,17 @@ class ModeleTetris :
         if tot==occ:
             return True
         return False
-    
+
+    def supprime_ligne(self,lig):
+        for i in range(0,lig):
+            self.__terrain[i+1]=self.__terrain[i]
+
+    def supprime_lignes_completes(self):
+        for i in range(self.__base, self.__haut):
+            if self.est_ligne_complete(i):
+                self.supprime_ligne(i)
+                self.__score+=1
+
         
 
 class Forme:
