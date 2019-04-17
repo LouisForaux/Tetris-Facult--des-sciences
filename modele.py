@@ -61,6 +61,7 @@ class ModeleTetris :
             self.ajoute_forme()
             self.__forme = Forme(self)
             return True
+        self.supprime_lignes_completes()
 
     def get_couleur_forme(self):
         '''ModeleTetris->'''
